@@ -12,6 +12,7 @@ const typeDefs = gql`
     }
     type Query {
         staffMembers: [StaffMember]
+        staffMember: StaffMember
     }
 `;
 
@@ -54,6 +55,12 @@ const resolvers = {
     Query: {
         staffMembers: () => {
             return StaffMembers;
+        },
+        staffMember: (object, args, context, info) => {
+            const selectedStaffMember = StaffMembers.find((staff) => {
+                return (staff.id === args.id);
+            });
+            return selectedStaffMember;
         }
     }
 };
