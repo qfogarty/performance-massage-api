@@ -2,11 +2,12 @@ const {ApolloServer, gql} = require('apollo-server');
 
 const typeDefs = gql`
     type StaffMember {
+        id: ID!
         name: String
-        dateJoined: String,
-        shortName: String,
-        detail: String,
-        photo: String,
+        dateJoined: String
+        shortName: String
+        detail: String
+        photo: String
         timelyId: Int
     }
     type Query {
