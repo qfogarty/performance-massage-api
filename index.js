@@ -65,7 +65,7 @@ const resolvers = {
         staffMembers: () => {
             return StaffMembers;
         },
-        staffMember: (object, args, context, info) => {
+        staffMember: (object, args) => {
             const selectedStaffMember = StaffMembers.find((staff) => {
                 return (staff.id === args.id);
             });
