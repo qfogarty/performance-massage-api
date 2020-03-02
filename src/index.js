@@ -1,14 +1,14 @@
-const {ApolloServer} = require('apollo-server');
-const typeDefs       = require('./schema');
-const staffAPI       = require('./datasources/staff');
-const resolvers      = require('./resolvers');
+const { ApolloServer } = require("apollo-server");
+const typeDefs = require("./schema");
+const staffAPI = require("./datasources/staff");
+const resolvers = require("./resolvers");
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
   engine: {
     apiKey: process.env.ENGINE_API_KEY,
-    debugPrintReports: true,
+    debugPrintReports: true
   },
   dataSources: () => ({
     staffAPI: new staffAPI()
@@ -16,5 +16,5 @@ const server = new ApolloServer({
 });
 
 server.listen().then(({ url }) => {
-  console.log(`🚀 Server ready at ${ url }`);
+  console.log(`🚀 Server ready at ${url}`);
 });
