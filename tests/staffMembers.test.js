@@ -4,7 +4,7 @@ const typeDefs = require("../src/schema");
 const staffAPI = require("../src/datasources/staff");
 const resolvers = require("../src/resolvers");
 
-test("fetches a list of staff members", async () => {
+test("fetch a list of all staff members", async () => {
   // create a test server to test against the production typeDefs, resolvers, and dataSources.
   const server = new ApolloServer({
     typeDefs,
