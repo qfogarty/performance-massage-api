@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetches single staff member 1`] = `
+Object {
+  "data": Object {
+    "staffMember": Object {
+      "detail": "Rebecca Fogarty (nee Forlong) is a qualified massage therapist specialising in sport and remedial massage. She studied in Australia for a 'Diploma of Remedial Massage'. After returning home to New Zealand, she worked at a sports physio before setting up her own business in 2008 - 'Performance Massage Clinic'.
+Through her sporting career, which was highlighted by competing at the 2006 Commonwealth Games, she gained a love for massage after experiencing firsthand the great benefits of getting regular massage, such as the improved recovery, performance and injury prevention.
+A large number of Rebecca's clientele are athletes needing deep tissue and sports massage. She works with athletes ranging from your general 'keep fit' to the elites. Rebecca has gained a lot of experience with working with top elite athletes and teams. Some of which include; The Auckland Blues and Auckland NPC, The All Blacks plus many of the New Zealand and Australian representatives in track &amp; field and triathlon.
+Her work also includes many clients suffering neck/back/shoulder pain caused through work related stresses, those recovering from injury or needing relief from muscular pain and tension, and those needing to just relax and de-stress.
+Rebecca takes pride in her work with each individual, and believes in the importance of having a healthy body and mind.",
+      "firstName": "Rebecca",
+      "id": "1",
+      "lastName": "Fogarty",
+      "preferredName": "Bex",
+      "timelyId": 220529,
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
