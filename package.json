@@ -7,7 +7,7 @@
     "start": "nodemon ./src/index.js",
     "lint:js": "eslint './src/**/*.{js,json}'",
     "lint:js:fix": "eslint --fix './src/**/*.{js,json}'",
-    "test": "npm run lint:js"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +15,19 @@
   "dependencies": {
     "apollo-datasource-rest": "^0.7.0",
     "apollo-server": "^2.10.0",
+    "apollo-server-testing": "^2.10.1",
     "graphql": "^14.6.0",
     "nodemon": "^2.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-graphql": "^3.1.1"
+    "eslint-plugin-graphql": "^3.1.1",
+    "jest": "^25.1.0",
+    "jest-runner-prettier": "^0.3.6",
+    "prettier": "^1.19.1"
   }
 }
