@@ -34,12 +34,10 @@
   },
   "lint-staged": {
     "./src/**/*.js": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.{json,yml,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
