@@ -1,6 +1,16 @@
+# Add 'repo' label to any root file changes
+repo:
+  - ./*
+  
+# Add '@domain/core' label to any change within the 'core' package
+@domain/core:
+  - package/core/*
+  - package/core/**/*
+  
 # Add 'label1' to any changes within 'example' folder or any subfolders
 source:
-  - ./src/**/*
+  - src/**/*
 
 # Add 'label2' to any file changes within 'example2' folder
-tests: ./tests/**/*
+tests: 
+ - tests/**/*
