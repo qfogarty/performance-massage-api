@@ -10,6 +10,8 @@
 
 ## Run the tests
 
+Jest is used to test response data returned from a Firebase Database. To run these snapshot tests use the following:
+
     npm run test
 
 # GraphQL API
