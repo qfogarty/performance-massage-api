@@ -4,8 +4,10 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js:fix": "eslint --fix './src/**/*.{js,json}'"
+    "start": "nodemon ./src/index.js",
+    "lint:js": "eslint './src/**/*.{js,json}'",
+    "lint:js:fix": "eslint --fix './src/**/*.{js,json}'",
+    "test": "npm run lint:js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,8 @@
   "dependencies": {
     "apollo-datasource-rest": "^0.7.0",
     "apollo-server": "^2.10.0",
-    "graphql": "^14.6.0"
+    "graphql": "^14.6.0",
+    "nodemon": "^2.0.2"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
