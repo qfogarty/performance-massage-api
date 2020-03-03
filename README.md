@@ -1,14 +1,18 @@
 # Performance Massage Staff members API
+This is a bare bones Apollo GraphQL API used to query staff member data stored in a firebase realtime db.
 
 ## Install
+Install Node package dependencies with the following:
 
     npm i
 
 ## Run the app
+To start the Node app use:
 
     npm run start
 
 ## Run the tests
+Jest is used to test response data returned from a Firebase Database. To run these snapshot tests use the following:
 
 Jest is used to test response data returned from a Firebase Database. To run these snapshot tests use the following:
 
@@ -16,7 +20,24 @@ Jest is used to test response data returned from a Firebase Database. To run the
 
 # GraphQL API
 
-The GraphQL API can use the examples as described below.
+This GraphQL API can use the examples as described below.
+
+## API Schema
+
+    type StaffMember {
+        id: ID!
+        firstName: String!
+        lastName: String!
+        preferredName: String
+        dateJoined: String
+        detail: String
+        photo: String
+        timelyId: Int
+    }
+    type Query {
+        staffMembers: [StaffMember]
+        staffMember(id: ID): StaffMember
+    }
 
 ## Get list of Staff Members
 
@@ -40,8 +61,6 @@ The GraphQL API can use the examples as described below.
 ## Get a specific Staff Member
 
 ### Request
-
-`GET /thing/id`
 
     curl -i -X POST -H "Content-Type: application/json" --data '{ "query": "{ staffMember(id:1) { preferredName } }" }' http://localhost:4000/
 
