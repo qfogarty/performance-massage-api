@@ -57,8 +57,6 @@ This GraphQL API can use the examples as described below.
 
 ### Request
 
-`GET /thing/id`
-
     curl -i -X POST -H "Content-Type: application/json" --data '{ "query": "{ staffMember(id:1) { preferredName } }" }' http://localhost:4000/
 
 ### Response
