@@ -1,4 +1,5 @@
 # Performance Massage Staff members API
+This is a bare bones Apollo GraphQL API used to query staff member data stored in a firebase realtime db.
 
 ## Install
 
@@ -14,7 +15,24 @@
 
 # GraphQL API
 
-The GraphQL API can use the examples as described below.
+This GraphQL API can use the examples as described below.
+
+## API Schema
+
+    type StaffMember {
+        id: ID!
+        firstName: String!
+        lastName: String!
+        preferredName: String
+        dateJoined: String
+        detail: String
+        photo: String
+        timelyId: Int
+    }
+    type Query {
+        staffMembers: [StaffMember]
+        staffMember(id: ID): StaffMember
+    }
 
 ## Get list of Staff Members
 
