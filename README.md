@@ -1,4 +1,4 @@
-# Performance Massage Staff members API
+# Performance Massage staff members API
 This is a bare bones Apollo GraphQL API used to query staff member data stored in a firebase realtime db.
 
 ## Install
@@ -12,8 +12,6 @@ To start the Node app use:
     npm run start
 
 ## Run the tests
-Jest is used to test response data returned from a Firebase Database. To run these snapshot tests use the following:
-
 Jest is used to test response data returned from a Firebase Database. To run these snapshot tests use the following:
 
     npm run test
