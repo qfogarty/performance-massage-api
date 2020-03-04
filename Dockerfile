@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM node:13
 RUN mkdir -p /app
 WORKDIR /app
 COPY . .
