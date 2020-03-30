@@ -26,7 +26,8 @@
     "jest": "^25.2.4",
     "jest-runner-prettier": "^0.3.6",
     "lint-staged": "^10.1.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "minimist": ">=1.2.2"
   },
   "husky": {
     "hooks": {
