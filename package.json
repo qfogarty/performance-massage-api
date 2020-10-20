@@ -15,19 +15,24 @@
   "license": "ISC",
   "dependencies": {
     "apollo-datasource-rest": "^0.7.0",
-    "apollo-server": "^2.11.0",
-    "apollo-server-testing": "^2.11.0",
-    "graphql": "^14.6.0"
+    "apollo-server": "^2.18.2",
+    "apollo-server-testing": "^2.18.2",
+    "graphql": "^14.7.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^25.5.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "eslint": "^6.8.0",
     "eslint-plugin-graphql": "^3.1.1",
-    "husky": "^4.2.3",
-    "jest": "^25.2.4",
+    "husky": "^4.3.0",
+    "jest": "^25.5.4",
     "jest-runner-prettier": "^0.3.6",
-    "lint-staged": "^10.1.0",
-    "prettier": "^1.19.1",
-    "minimist": ">=1.2.2"
+    "lint-staged": "^10.4.2",
+    "minimist": ">=1.2.2",
+    "prettier": "^1.19.1"
   },
   "husky": {
     "hooks": {
